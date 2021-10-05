@@ -99,9 +99,9 @@ const Contact = () => {
                                     </InputGroup>
                                 </Form.Group>
                             </Row>
-                                <h6>Write a Message</h6>
+                                <h6>Write a Message or Course name</h6>
                                 <textarea style={{ width: "360px" }} id="exampleFormControlTextarea1" rows="3"></textarea> <br />
-                            <Button type="submit">Submit form</Button>
+                            <Button type="submit">Submit</Button>
                         </Form>
                     </Col>
                 </Row>

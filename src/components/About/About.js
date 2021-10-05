@@ -10,7 +10,7 @@ import "./About.css"
 const About = () => {
     return (
         <div>
-            <h1 className="text-center my-5">About KBO</h1>
+            <h1 className="text-center my-5">ABOUT KBO-TECH</h1>
             {/* <CardGroup> */}
             <Container>
                 <Row xs={1} md={3} className="g-4 auth-img-size">

@@ -1,16 +1,22 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+import { Button, Card, Col } from 'react-bootstrap';
 import Rating from 'react-rating';
+import { useHistory } from 'react-router';
+import "./HomeData.css"
 
 const HomeData = (props) => {
 
     const { name, instructor, urlthumb, instructors_Qualifications, description, pricing, rating, paricipant } = props.course
+    const history = useHistory()
+    const handlContact = () => {
+        history.push("/contact")
+    }
     return (
         <div>
         <div>
             <Col>
                 <Card className="d-flex">
-                    <Card.Img  variant="top" src={urlthumb} />
+                    <Card.Img className = "home-img-size" variant="top" src={urlthumb} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <div className="d-flex justify-content-between">
@@ -38,6 +44,8 @@ const HomeData = (props) => {
                         <Card.Text>
                             {description}
                         </Card.Text>
+                        <Button onClick={handlContact} variant="primary">Enroll Now</Button>
+
                     </Card.Body>
                 </Card>
             </Col>
