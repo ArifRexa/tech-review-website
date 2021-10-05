@@ -25,9 +25,9 @@ const Home = () => {
         history.push("/services")
     }
     return (
-        <div>
-            
-            <h1 className = "text-center my-5">Welcome to KBO-TECH</h1>
+        <div >
+
+            <h1 className="text-center fw-bold my-5 p-5">Welcome to KBO-TECH</h1>
 
             <Carousel>
                 <Carousel.Item interval={1000}>
@@ -112,7 +112,8 @@ const Home = () => {
             </Carousel>
 
 
-            <h1 className = "text-center my-5">Our Services</h1>
+
+            <h1 className="text-center my-5 fw-bold">Our Services</h1>
             <Container>
                 <Row xs={1} md={2} className="g-4">
                     {

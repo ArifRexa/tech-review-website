@@ -10,10 +10,10 @@ import "./About.css"
 const About = () => {
     return (
         <div>
-            <h1 className="text-center my-5">ABOUT KBO-TECH</h1>
+            <h1 className="text-center my-5 fw-bold p-5">ABOUT KBO-TECH</h1>
             {/* <CardGroup> */}
             <Container>
-                <Row xs={1} md={3} className="g-4 auth-img-size">
+                <Row xs={1} md={3} className="g-4 auth-img-size fw-bold">
                     <Col>
 
                         <Card.Img variant="top" src={img1} />

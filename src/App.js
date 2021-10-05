@@ -19,26 +19,26 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div >
+    <div className="bodyDesign">
       <Router>
         <Navigationbar></Navigationbar>
         <Switch>
-          <Route path = "/home">
+          <Route path="/home">
             <Home></Home>
           </Route>
-          <Route exact path = "/">
+          <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route path = "/services">
+          <Route path="/services">
             <Services></Services>
           </Route>
-          <Route path = "/about">
+          <Route path="/about">
             <About></About>
           </Route>
-          <Route path = "/contact">
+          <Route path="/contact">
             <Contact></Contact>
           </Route>
-          <Route path = "*">
+          <Route path="*">
             <NotFound></NotFound>
           </Route>
         </Switch>

@@ -16,8 +16,8 @@ const ServicesData = (props) => {
     return (
         <div>
             <Col>
-                <Card className="d-flex">
-                    <Card.Img className="img-size" variant="top" src={urlthumb} />
+                <Card className="d-flex shadow-lg">
+                    <Card.Img className="img-size rounded-3 p-3 text-warning" variant="top" src={urlthumb} />
                     <Card.Body>
                         <Card.Title>{name}</Card.Title>
                         <div className="d-flex justify-content-between">
@@ -27,20 +27,19 @@ const ServicesData = (props) => {
                         </div>
                         <h6>Price: $ {pricing}</h6>
                         <div className="d-flex ">
-                        {rating}
+                            {rating}
 
+                            <div style={{ "margin-left": "10px", "margin-right": "10px" }}>
 
-                        <div style = {{"margin-left": "10px", "margin-right": "10px"}}>
+                                <Rating
+                                    initialRating={rating}
+                                    emptySymbol="far fa-star"
+                                    fullSymbol="fas fa-star"
+                                    readonly>
 
-                        <Rating  
-                            initialRating={rating}
-                            emptySymbol="far fa-star"
-                            fullSymbol="fas fa-star"
-                            readonly>
-
-                        </Rating>
-                        </div >
-                        ({paricipant})
+                                </Rating>
+                            </div >
+                            ({paricipant})
                         </div>
                         <Card.Text>
                             {description}

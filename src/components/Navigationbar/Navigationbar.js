@@ -9,7 +9,7 @@ const Navigationbar = () => {
       }
     return (
         <div>
-            <Navbar bg="primary" variant = "dark" expand="lg">
+            <Navbar bg="primary" variant = "dark" expand="lg" fixed="top">
                 <Container>
                     <NavLink to="/home" className = "fw-bold text-light navbar-brand">KBO-TECH</NavLink>
                     <Navbar.Toggle aria-controls="navbarScroll" />
